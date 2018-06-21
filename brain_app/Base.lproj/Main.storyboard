@@ -41,37 +41,22 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tr-H2-qaW">
                                 <rect key="frame" x="176" y="399" width="63" height="30"/>
                                 <state key="normal" title="The Eyes"/>
-                                <connections>
-                                    <segue destination="O99-Ks-ERl" kind="show" id="U5C-te-hPY"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuC-tP-Fwi">
                                 <rect key="frame" x="100" y="436" width="214" height="30"/>
                                 <state key="normal" title="The Lateral Geniculate Nucleus"/>
-                                <connections>
-                                    <segue destination="qlB-xs-7La" kind="show" id="DuV-9P-2ii"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLw-Cc-dgP">
                                 <rect key="frame" x="128" y="473" width="159" height="30"/>
                                 <state key="normal" title="The Early Visual Cortex"/>
-                                <connections>
-                                    <segue destination="FZu-Xd-cdD" kind="show" id="neV-8i-qHy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKo-VV-6S7">
                                 <rect key="frame" x="137" y="510" width="140" height="30"/>
                                 <state key="normal" title="The Ventral Pathway"/>
-                                <connections>
-                                    <segue destination="hbe-vS-CeK" kind="show" id="zJ3-zI-tgj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceg-va-IDd">
                                 <rect key="frame" x="139" y="547" width="136" height="30"/>
                                 <state key="normal" title="The Dorsal Pathway"/>
-                                <connections>
-                                    <segue destination="oLV-vC-aJK" kind="show" id="Pcv-aT-6Ph"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
