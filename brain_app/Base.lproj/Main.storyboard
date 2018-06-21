@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_intro" translatesAutoresizingMaskIntoConstraints="NO" id="0DZ-am-rty">
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_intro" translatesAutoresizingMaskIntoConstraints="NO" id="0DZ-am-rty">
                                 <rect key="frame" x="132" y="70" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Nez-FE-Ogk"/>
@@ -89,12 +89,12 @@
         <scene sceneID="rnE-nf-dcG">
             <objects>
                 <viewController id="WET-R5-6Ao" customClass="EyeViewController" customModule="brain_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LUW-In-adq">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LUW-In-adq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Introduction to the visual system" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baz-3J-6Sm">
-                                <rect key="frame" x="50" y="120.99999999999999" width="265" height="20.333333333333329"/>
+                                <rect key="frame" x="50" y="121.00000000000001" width="265" height="20.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -109,22 +109,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="27" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="917-Uq-bxr">
+                                <rect key="frame" x="20" y="149" width="374" height="260"/>
+                                <string key="text">The visual system includes the eyes, connecting pathways through to the visual cortex, and other parts of the brain. The neural signals initially processed by the retina travel via the axons of the ganglion cells through the optic nerves, dividing and partially crossing over into the optic chiasm and then travelling via the optic tracts to the lateral geniculate nucleus (LGN). From the LGN, the signals continue to the primary visual cortex (V1), where further visual processing takes place.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theVisualSystem" highlightedImage="eyes_intro" translatesAutoresizingMaskIntoConstraints="NO" id="Hfh-Is-5Um">
+                                <rect key="frame" x="68" y="417" width="278" height="282"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="917-Uq-bxr" firstAttribute="top" secondItem="Baz-3J-6Sm" secondAttribute="bottom" constant="7.6666666666666856" id="26E-in-WwB"/>
+                            <constraint firstItem="96B-Fl-6RO" firstAttribute="trailing" secondItem="917-Uq-bxr" secondAttribute="trailing" constant="20" id="48c-83-3NS"/>
                             <constraint firstItem="96B-Fl-6RO" firstAttribute="bottom" secondItem="bCq-Zl-U82" secondAttribute="bottom" constant="674" id="6Qd-bT-fp1"/>
+                            <constraint firstItem="96B-Fl-6RO" firstAttribute="trailing" secondItem="Hfh-Is-5Um" secondAttribute="trailing" constant="68" id="7CL-pj-J2R"/>
                             <constraint firstItem="In8-56-Roj" firstAttribute="leading" secondItem="96B-Fl-6RO" secondAttribute="leading" constant="166" id="93k-eJ-8pz"/>
+                            <constraint firstItem="917-Uq-bxr" firstAttribute="top" secondItem="96B-Fl-6RO" secondAttribute="top" constant="129" id="9Ps-WK-8Ci"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bCq-Zl-U82" secondAttribute="trailing" constant="20" symbolic="YES" id="HJ6-CR-DOU"/>
                             <constraint firstItem="96B-Fl-6RO" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Baz-3J-6Sm" secondAttribute="bottom" constant="50" id="NDc-px-mKM"/>
                             <constraint firstItem="bCq-Zl-U82" firstAttribute="leading" secondItem="Baz-3J-6Sm" secondAttribute="leading" id="VAJ-0H-pJA"/>
+                            <constraint firstItem="96B-Fl-6RO" firstAttribute="bottom" secondItem="917-Uq-bxr" secondAttribute="bottom" constant="327" id="VLJ-4U-k38"/>
                             <constraint firstItem="bCq-Zl-U82" firstAttribute="top" secondItem="96B-Fl-6RO" secondAttribute="top" constant="12" id="WOP-Q2-qd5"/>
                             <constraint firstItem="Baz-3J-6Sm" firstAttribute="top" secondItem="bCq-Zl-U82" secondAttribute="bottom" constant="59" id="aQm-sN-YCf"/>
                             <constraint firstItem="96B-Fl-6RO" firstAttribute="bottom" secondItem="In8-56-Roj" secondAttribute="bottom" constant="637" id="c0a-C9-K07"/>
+                            <constraint firstItem="917-Uq-bxr" firstAttribute="leading" secondItem="96B-Fl-6RO" secondAttribute="leading" constant="20" id="e3H-Lj-82w"/>
                             <constraint firstItem="96B-Fl-6RO" firstAttribute="trailing" secondItem="In8-56-Roj" secondAttribute="trailing" constant="166" id="fnd-HJ-4Kc"/>
+                            <constraint firstItem="96B-Fl-6RO" firstAttribute="bottom" secondItem="Hfh-Is-5Um" secondAttribute="bottom" constant="37" id="iEL-Jo-PvL"/>
                             <constraint firstItem="Baz-3J-6Sm" firstAttribute="top" secondItem="96B-Fl-6RO" secondAttribute="top" constant="101" id="jAk-Nh-Dg2"/>
                             <constraint firstItem="bCq-Zl-U82" firstAttribute="leading" secondItem="96B-Fl-6RO" secondAttribute="leading" constant="50" id="jXn-RP-vzt"/>
+                            <constraint firstItem="Hfh-Is-5Um" firstAttribute="leading" secondItem="96B-Fl-6RO" secondAttribute="leading" constant="68" id="lTs-75-GuB"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Baz-3J-6Sm" secondAttribute="trailing" constant="20" symbolic="YES" id="nug-iO-68u"/>
                             <constraint firstItem="Baz-3J-6Sm" firstAttribute="leading" secondItem="96B-Fl-6RO" secondAttribute="leading" constant="50" id="pFR-AE-HCf"/>
+                            <constraint firstItem="Hfh-Is-5Um" firstAttribute="top" secondItem="917-Uq-bxr" secondAttribute="bottom" constant="8" id="rmh-PQ-ijm"/>
                             <constraint firstItem="In8-56-Roj" firstAttribute="top" secondItem="96B-Fl-6RO" secondAttribute="top" constant="55" id="vsS-KE-YC3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="96B-Fl-6RO"/>
@@ -132,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcZ-J0-nNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692.75362318840587" y="33.423913043478265"/>
+            <point key="canvasLocation" x="691.304347826087" y="32.608695652173914"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="VYt-MB-W4o">
@@ -142,8 +161,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Eyes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVE-hf-A32">
-                                <rect key="frame" x="167" y="75" width="80" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Eye" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVE-hf-A32">
+                                <rect key="frame" x="167" y="75" width="80" height="24.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,8 +171,17 @@
                                 <rect key="frame" x="50" y="32" width="34" height="29.333333333333329"/>
                                 <state key="normal" title="Back"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="1. Components" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM2-Gh-rqm">
-                                <rect key="frame" x="49.999999999999993" y="120.33333333333331" width="114.33333333333331" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="1. How the eye works" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM2-Gh-rqm">
+                                <rect key="frame" x="50" y="121" width="161" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-jj-9vx">
+                                <rect key="frame" x="20" y="149" width="374" height="533"/>
+                                <string key="text">In a number of ways, the human eye works much like a digital camera:  1. Light is focused primarily bu the cornes - the clear front surface of the eye, which acts like a camera lens. 2. The iris of the eye functions like the diaphragm of a camera, controlling the amount of light reaching the back of the eye by automatically adjusting the size of the pupil (aperture).
+3. The eye's crystalline lens is located directly behind the pupil and further focuses light. Through a process called accommodation, this lens helps the eye automatically focus on near and approaching objects, like an autofocus camera lens.
+4. Light focused by the cornes and crystalline lens (and limited by the iris and pupil) then reaches the retina - the light-sensitive inner lining of the back of the eye. The retina acts like an electronic image sensor of a digital camera, converting optical images into electronic signals. The optic nerve then transmits these signals to the brain.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -162,15 +190,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1mb-OI-pxA" firstAttribute="bottom" secondItem="suG-MU-zCE" secondAttribute="bottom" constant="674.66666666666663" id="1kA-5a-cIv"/>
-                            <constraint firstItem="RM2-Gh-rqm" firstAttribute="top" secondItem="suG-MU-zCE" secondAttribute="bottom" constant="59" id="6Gh-hX-3ia"/>
+                            <constraint firstItem="6XQ-jj-9vx" firstAttribute="top" secondItem="RM2-Gh-rqm" secondAttribute="bottom" constant="7.6699999999999999" id="5an-N9-46p"/>
+                            <constraint firstItem="1mb-OI-pxA" firstAttribute="trailing" secondItem="6XQ-jj-9vx" secondAttribute="trailing" constant="20" id="6wM-XZ-6dF"/>
                             <constraint firstItem="1mb-OI-pxA" firstAttribute="bottom" secondItem="RM2-Gh-rqm" secondAttribute="bottom" constant="595" id="7d6-SJ-mtY"/>
-                            <constraint firstItem="LVE-hf-A32" firstAttribute="centerX" secondItem="1mb-OI-pxA" secondAttribute="centerX" id="BeK-3E-tIQ"/>
+                            <constraint firstItem="1mb-OI-pxA" firstAttribute="bottom" secondItem="6XQ-jj-9vx" secondAttribute="bottom" constant="54" id="C4X-G3-AKN"/>
+                            <constraint firstItem="LVE-hf-A32" firstAttribute="top" secondItem="1mb-OI-pxA" secondAttribute="top" constant="55" id="G1d-iv-9SJ"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RM2-Gh-rqm" secondAttribute="trailing" constant="20" symbolic="YES" id="IYW-eW-rNH"/>
-                            <constraint firstItem="LVE-hf-A32" firstAttribute="leading" secondItem="1mb-OI-pxA" secondAttribute="leading" constant="167" id="KMV-8S-0j5"/>
+                            <constraint firstItem="1mb-OI-pxA" firstAttribute="bottom" secondItem="LVE-hf-A32" secondAttribute="bottom" constant="636.66666666666663" id="LU8-8Y-rhR"/>
                             <constraint firstItem="RM2-Gh-rqm" firstAttribute="top" secondItem="1mb-OI-pxA" secondAttribute="top" constant="101" id="MBT-qU-iVj"/>
-                            <constraint firstItem="1mb-OI-pxA" firstAttribute="trailing" secondItem="LVE-hf-A32" secondAttribute="trailing" constant="167" id="P1F-OM-0Hf"/>
-                            <constraint firstItem="LVE-hf-A32" firstAttribute="top" secondItem="1mb-OI-pxA" secondAttribute="top" constant="55" id="VTU-WR-8OP"/>
+                            <constraint firstItem="LVE-hf-A32" firstAttribute="leading" secondItem="1mb-OI-pxA" secondAttribute="leading" constant="167" id="UHw-hf-aaX"/>
+                            <constraint firstItem="1mb-OI-pxA" firstAttribute="trailing" secondItem="LVE-hf-A32" secondAttribute="trailing" constant="167" id="f19-xt-ofP"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="suG-MU-zCE" secondAttribute="trailing" constant="20" symbolic="YES" id="fSq-Il-UuO"/>
+                            <constraint firstItem="6XQ-jj-9vx" firstAttribute="leading" secondItem="1mb-OI-pxA" secondAttribute="leading" constant="20" id="gI3-9D-OzA"/>
                             <constraint firstItem="suG-MU-zCE" firstAttribute="top" secondItem="1mb-OI-pxA" secondAttribute="top" constant="12" id="pWF-z2-tmg"/>
                             <constraint firstItem="RM2-Gh-rqm" firstAttribute="leading" secondItem="suG-MU-zCE" secondAttribute="leading" id="s1u-Mc-nsC"/>
                             <constraint firstItem="RM2-Gh-rqm" firstAttribute="leading" secondItem="1mb-OI-pxA" secondAttribute="leading" constant="50" id="zGI-uI-Sib"/>
@@ -181,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eur-5c-Wiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365" y="34"/>
+            <point key="canvasLocation" x="1362.3188405797102" y="33.423913043478265"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tY8-OS-Jpz">
@@ -293,7 +324,7 @@
                                 <state key="normal" title="Back"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Ventral Pathway" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L7-YG-ClR">
-                                <rect key="frame" x="118.33333333333333" y="75" width="177.33333333333337" height="24"/>
+                                <rect key="frame" x="118.66666666666669" y="75" width="177" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -379,5 +410,6 @@
     </scenes>
     <resources>
         <image name="eyes_intro" width="260" height="261"/>
+        <image name="theVisualSystem" width="432" height="282"/>
     </resources>
 </document>

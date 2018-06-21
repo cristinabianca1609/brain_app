@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB05E7A20DC30C90036E5B9 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB05E7920DC30C90036E5B9 /* assets.xcassets */; };
 		6BB061E020CC36B900A5ECCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB061DF20CC36B900A5ECCE /* AppDelegate.swift */; };
 		6BB061E220CC36B900A5ECCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB061E120CC36B900A5ECCE /* ViewController.swift */; };
 		6BB061E520CC36B900A5ECCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB061E320CC36B900A5ECCE /* Main.storyboard */; };
-		6BB061E720CC36BD00A5ECCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BB061E620CC36BD00A5ECCE /* Assets.xcassets */; };
 		6BB061EA20CC36BD00A5ECCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BB061E820CC36BD00A5ECCE /* LaunchScreen.storyboard */; };
 		6BB061F520CC36BE00A5ECCE /* brain_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB061F420CC36BE00A5ECCE /* brain_appTests.swift */; };
 		6BB0620020CC36BE00A5ECCE /* brain_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB061FF20CC36BE00A5ECCE /* brain_appUITests.swift */; };
@@ -35,11 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BB05E7920DC30C90036E5B9 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		6BB061DC20CC36B900A5ECCE /* brain_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brain_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB061DF20CC36B900A5ECCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB061E120CC36B900A5ECCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6BB061E420CC36B900A5ECCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6BB061E620CC36BD00A5ECCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BB061E920CC36BD00A5ECCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BB061EB20CC36BD00A5ECCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BB061F020CC36BE00A5ECCE /* brain_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brain_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,10 +102,10 @@
 				6BB061DF20CC36B900A5ECCE /* AppDelegate.swift */,
 				6BB061E120CC36B900A5ECCE /* ViewController.swift */,
 				6BB061E320CC36B900A5ECCE /* Main.storyboard */,
-				6BB061E620CC36BD00A5ECCE /* Assets.xcassets */,
 				6BB061E820CC36BD00A5ECCE /* LaunchScreen.storyboard */,
 				6BB061EB20CC36BD00A5ECCE /* Info.plist */,
 				6BB0620D20CC413700A5ECCE /* EyeViewController.swift */,
+				6BB05E7920DC30C90036E5B9 /* assets.xcassets */,
 			);
 			path = brain_app;
 			sourceTree = "<group>";
@@ -232,8 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BB05E7A20DC30C90036E5B9 /* assets.xcassets in Resources */,
 				6BB061EA20CC36BD00A5ECCE /* LaunchScreen.storyboard in Resources */,
-				6BB061E720CC36BD00A5ECCE /* Assets.xcassets in Resources */,
 				6BB061E520CC36B900A5ECCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
